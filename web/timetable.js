@@ -1,0 +1,12 @@
+// Scene timetable + 4:3 sizing helpers (no DOM). Scene starts = IT order change times seen in the Unicorn run (re/golden, re/NOTES.md), rounded to 1 s.
+export const DUR = 183.3;
+export const FX = [[0,'intro'],[15,'eye picture'],[29,'green rings'],[44,'particle cloud'],[58,'particle ring'],[72,'spiral tiles'],[86,'light trails'],
+  [108,'picture'],[115,'photo + ghost'],[129,'wire-frame room'],[144,'eye zoom'],[158,'starburst'],[172,'fade-out text']]
+  .map(([t0,name],i,a)=>({i,t0,t1:i+1<a.length?a[i+1][0]:DUR,name}));
+export const fxAt = t => { let k = 0; for (const e of FX) if (t >= e.t0) k = e.i; return k; };
+export const fmt = s => Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+export function displaySize(availW, availH, dpr = 1) {
+  const fitW = Math.min(availW, availH * 4 / 3) * dpr, k = Math.floor(fitW / 320);
+  const w = (k >= 1 ? 320 * k : fitW) / dpr;
+  return { w, h: w * 3 / 4 };
+}
