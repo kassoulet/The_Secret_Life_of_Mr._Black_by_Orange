@@ -88,8 +88,18 @@
   sync to the original IMS timing is approximate (libopenmpt vs IMS, and the harness clock model).
 - Other scenes (2-13): not ported, no oracle yet. Player shows a "not ported yet" placeholder for them.
 
+## Scene 7 (order 15, picture): ported (`web/fx/fx07.js`, `node re/check_fx07.mjs`)
+- Sequencer re-read (calls in 0x1002f0): the loop for order 15 has **no frame function**; init 0x10095e shows `cncd.scx` (file name at 0x20d5da; RIX3: palette at +10, pixels at +778) and nothing changes. 0x102207 is a cleanup call after the previous loop.
+- Correction to the table above from order 12 on: the loop 12-14 uses frame **0x101834** (3D rotation of the light-trail flowers, init 0x102ffc 0x1036de 0x1016e6), the picture scene is 15 only; 16 = init 0x10371e, frame 0x103807; 17 = init 0x103b29 0x105421, frame 0x1054bf, etc. (each init/frame pair is the call pair around the `cmp [esp+4],N` threshold).
+- Matches golden t0110 to 0 samples (> 2/255, 6-bit scaling); no per-frame oracle needed (static).
+
 ## Next steps
 1. Per-scene RE of the sequencer table above (init/frame functions) -> JS effects; start from the simplest (intro noise 0x10275f, text scroller, fades).
 2. Decode which PETTERI files each scene uses (watch file offsets passed to 0x100231 / reads of `assets/*`).
 3. Music: port an IT player to JS (libopenmpt in `web/vendor` like b-hyper) - KUSI.IT is a plain IT 2.x file, so libopenmpt is enough, positions via order/row.
 4. Aspect: 320x200 (mode 13h) and the 320x400 intro (unchained) are both shown at 4:3.
+
+## Scenes 8 and 9 (orders 16-17, 18-19)
+- fx08 (frame 0x103807): ghost/mask buffers are 81920 bytes each (a 64000 dump left the bottom rows wrong). `node re/check_fx08.mjs`: 0 differing pixels over 556 frames (`re/oracle16`, `re/oracle_s16.py`, `tools/export_s16.py`).
+- fx09 (frame 0x1054bf, init 0x103b29/0x105421): wire-frame room, a pure function of the time word t (no accumulation). `re/oracle_s18.py` -> `re/oracle18`, `tools/export_s18.py` -> `web/assets/s18.bin`, `node re/check_fx09.mjs`: 0 differing pixels over 501 frames (oracle t is the original's own time word per frame; its machine-dependent frame times are not reproduced).
+- TODO: wire fx08/fx09 into the player (order -> t mapping with W0), scenes 10 (orders 20-21), 11 (22-23), 12 (24), 1-6.

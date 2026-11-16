@@ -1,5 +1,5 @@
 # markku - "The Secret Life of Mr. Black" (Orange, 1997)
-Port status: **phase 1 done (harness + golden frames); JS port: 1 of 13 scenes (the intro, orders 0-1) ported and bit-exact against the Unicorn oracle; scenes 2-13 not ported (placeholder).** Credits: code Hoplite, music Dune (KUSI.IT), graphics Der Piipo, animation Frank. Own `.git` in this folder; original files (DEMO.EXE, KUSI.IT, PETTERI) untouched.
+Port status: **phase 1 done (harness + golden frames); JS port: 4 of 13 scenes bit-exact against the Unicorn oracle (the intro, orders 0-1; fx08, orders 16-17, 556 frames; fx09 wire-frame room, orders 18-19, 501 frames; plus the static picture of order 15, fx07, matching the golden frame); the other 9 are placeholders. Not wired into the player yet.** Credits: code Hoplite, music Dune (KUSI.IT), graphics Der Piipo, animation Frank. Own `.git` in this folder; original files (DEMO.EXE, KUSI.IT, PETTERI) untouched.
 
 Files: DEMO.EXE (MZ stub + PMODE/W 1.20 + uncompressed LE image, Watcom C + hand-written asm), KUSI.IT (Impulse Tracker 2.x module, played by Niklas Beisert's **Indoor Music System v0.6**), PETTERI (1.7 MB container of 23 files: RIX3 pictures, raw 320x200 images, shade tables, an animation; no compression).
 
