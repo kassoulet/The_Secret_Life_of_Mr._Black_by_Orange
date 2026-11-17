@@ -28,5 +28,5 @@ export function frame(t, out) {   // t: signed 32-bit time word; out: Uint8Array
   }
 }
 // time word of a music time (s): W0 at the first frame, 65536/s. UNRESOLVED/machine dependent: W0 (IMS timer start), the frame times (vsync phase of the harness clock).
-export const W0 = { w: 0, t: 115 };   // set from the oracle by tools/export_s16.py? see NOTES
+export const W0 = { w: 0, t: 114.61 };   // the oracle's first frame (order 16 starts at clock 114.61 s) has word t = 1
 export function render(t, ctx) { ctx.h = 200; frame((W0.w + Math.round((t - W0.t) * 65536)) | 0, ctx.idx); for (let i = 0; i < 768; i++) ctx.pal[i] = Math.round(D.pal[i] * 255 / 63); }

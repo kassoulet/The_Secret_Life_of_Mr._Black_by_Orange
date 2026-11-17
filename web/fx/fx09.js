@@ -55,3 +55,6 @@ export function frame(t, out) {   // t: signed 32-bit time word; out: Uint8Array
   }
   for (let i = 0; i < 64000; i++) out[i] = T[L[i] << 8 | bg[i]];
 }
+// Time word = IMS timer since the scene started (65536/s; the oracle's first frame has t = 1, orders 18 starts at clock 128.97 s): word = (music t - T0) * 65536.
+export const T0 = 128.97;
+export function render(t, ctx) { ctx.h = 200; frame(Math.max(0, Math.round((t - T0) * 65536)) | 0, ctx.idx); for (let i = 0; i < 768; i++) ctx.pal[i] = Math.round(D.pal[i] * 255 / 63); }
