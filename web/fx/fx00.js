@@ -7,7 +7,8 @@ export async function init() { A = { ani: await get('pallo64.ani'), pal: await g
 export function render(t, ctx) {
   const F = A.fr; let n = 0; while (n + 1 < F.length && F[n + 1][0] <= t) n++;
   if (!st || n < k) { st = mk(A); k = -1; }
-  while (k < n) { k++; step(st, F[k][1], F[k][2], F[k][3]); }
+  // time word = elapsed music clock (65536/s); the oracle's word is 0xF1.. = negative as int32, so its scroll branch never fires (see re/NOTES.md)
+  while (k < n) { k++; step(st, (F[k][0] * 65536) >>> 0, F[k][2], F[k][3]); }
   ctx.h = 400; ctx.idx.set(pageIdx(st, st.a2));      // page drawn by the previous frame = what the CRT showed during frame k
   for (let i = 0; i < 768; i++) ctx.pal[i] = Math.round(st.pal[i] * 255 / 63);
 }

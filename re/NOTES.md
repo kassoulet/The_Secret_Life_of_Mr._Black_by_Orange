@@ -80,6 +80,7 @@
 - Inputs: the demo reads a time word (0x200ab9, 65536 units/s from the IMS timer, starts ~4059038503), row and order every frame. The frame times come from
   the vsync waits in the (emulated) virtual clock, so `web/assets/intro_frames.json` ([clock s, time, row, order] per frame) is *recorded* from the oracle, not derived.
 - Seek class: ACCUMULATING (noise LFSR, scroll offset, page flip). `fx00.js` replays frames from 0 (~1.2 ms/frame, 503 frames < 1 s). Not a pure function of t.
+- **Player uses a positive time word, not the oracle's** (fx00.js): the original computes w = timer - start (0x100332..0x100351, start stored at 0x21d324); in the harness w is about -3600 s as int32 (0xF1..), so `jl` at 0x1027cb is always taken, the scroll branch never fires and the picture never animates. pallo64.ani is a 64-frame animation (4000 B per frame, wrap 0x3e800), so the intended intro scrolls it every 6144 units (~94 ms). The player feeds w = clock * 65536 (positive), which makes it animate; frame pixels are the same code, but this animation is NOT checked against an oracle. Why the harness word is negative (IMS timer jump after the first call?) is not established.
 - Not verified: the scroll branch (`time - last >= 6144`) never fires in this run (the time word is negative as a signed dword, so `jl` is always taken, `last` stays 0
   and the picture never scrolls). The branch is ported from the disassembly but not exercised by the oracle.
   The last frame (order 2, past the fade table's first 128 entries) is covered since the full 256-entry table is exported.
