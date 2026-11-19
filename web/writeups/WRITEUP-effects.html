@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Secret Life of Mr. Black (Orange, 1997) - effects, art and
+timing</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  :root{--bg:#fff;--fg:#1d1d22;--mut:#666;--ac:#c4155a;--code:#f3f3f6;--bd:#d8d8e0}
+  @media (prefers-color-scheme:dark){:root{--bg:#0b0b10;--fg:#d8d8e0;--mut:#9a9aa8;--ac:#ff6a9a;--code:#17171f;--bd:#33333f}}
+  *{box-sizing:border-box}
+  body{margin:0 auto;max-width:62rem;padding:0 16px;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,sans-serif}
+  #wunav{display:flex;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:8px;border-bottom:1px solid var(--bd);font-size:14px}
+  a{color:var(--ac)}
+  h1,h2,h3,h4{line-height:1.25;margin-top:1.8em}
+  img{max-width:100%;height:auto;image-rendering:auto}
+  pre{background:var(--code);border:1px solid var(--bd);border-radius:4px;padding:10px 12px;overflow-x:auto;font-size:13px;line-height:1.4}
+  code{background:var(--code);padding:1px 4px;border-radius:3px;font-size:.92em;overflow-wrap:anywhere}
+  pre code{background:none;padding:0;overflow-wrap:normal}
+  table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%}
+  td,th{border:1px solid var(--bd);padding:4px 8px}
+  blockquote{border-left:3px solid var(--bd);margin-left:0;padding-left:14px;color:var(--mut)}
+  #TOC{font-size:14px}#TOC ul{padding-left:1.2em}
+  #TOC>ul{padding-left:0;list-style:none}
+  details#toc-box{margin:12px 0}
+  </style>
+</head>
+<body>
+<nav id="wunav"><a href="../index.html">&larr; the demo</a> <a href="WRITEUP-asm.html">asm</a> <a href="WRITEUP-effects.html">effects</a> <a href="https://github.com/kassoulet/The_Secret_Life_of_Mr._Black_by_Orange">README on GitHub</a></nav>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="#the-secret-life-of-mr-black-orange-1997---effects-art-and-timing"
+id="toc-the-secret-life-of-mr-black-orange-1997---effects-art-and-timing">The
+Secret Life of Mr. Black (Orange, 1997) - effects, art and timing</a>
+<ul>
+<li><a href="#0-at-a-glance" id="toc-0-at-a-glance">0. At a
+glance</a></li>
+<li><a href="#1-timeline" id="toc-1-timeline">1. Timeline</a></li>
+<li><a href="#2-shared-building-blocks"
+id="toc-2-shared-building-blocks">2. Shared building blocks</a></li>
+<li><a href="#3-scene-by-scene" id="toc-3-scene-by-scene">3. Scene by
+scene</a>
+<ul>
+<li><a href="#30-intro-orders-0-1---noise-reveal-of-pallo64ani"
+id="toc-30-intro-orders-0-1---noise-reveal-of-pallo64ani">3.0 Intro
+(orders 0-1) - noise reveal of <code>pallo64.ani</code></a></li>
+<li><a href="#31-eye-warp--title-cards-orders-2-3-fx01js"
+id="toc-31-eye-warp--title-cards-orders-2-3-fx01js">3.1 Eye warp + title
+cards (orders 2-3, <code>fx01.js</code>)</a></li>
+<li><a href="#32-green-rings-orders-4-5-fx02js--blobjs"
+id="toc-32-green-rings-orders-4-5-fx02js--blobjs">3.2 Green rings
+(orders 4-5, <code>fx02.js</code> + <code>blob.js</code>)</a></li>
+<li><a href="#33-particle-cloud-orders-6-7-fx03js-cloudjs"
+id="toc-33-particle-cloud-orders-6-7-fx03js-cloudjs">3.3 Particle cloud
+(orders 6-7, <code>fx03.js</code>, <code>cloud.js</code>)</a></li>
+<li><a href="#34-particle-ring-orders-8-9-fx04js"
+id="toc-34-particle-ring-orders-8-9-fx04js">3.4 Particle ring (orders
+8-9, <code>fx04.js</code>)</a></li>
+<li><a href="#35-blob-spiral--pi-scroller-orders-10-11-fx05js"
+id="toc-35-blob-spiral--pi-scroller-orders-10-11-fx05js">3.5 Blob spiral
++ pi scroller (orders 10-11, <code>fx05.js</code>)</a></li>
+<li><a href="#36-light-trail-flowers-orders-12-14-fx06js--trailjs"
+id="toc-36-light-trail-flowers-orders-12-14-fx06js--trailjs">3.6
+Light-trail flowers (orders 12-14, <code>fx06.js</code> +
+<code>trail.js</code>)</a></li>
+<li><a href="#37-picture-order-15-fx07js"
+id="toc-37-picture-order-15-fx07js">3.7 Picture (order 15,
+<code>fx07.js</code>)</a></li>
+<li><a href="#38-photo--ghost-orders-16-17-fx08js"
+id="toc-38-photo--ghost-orders-16-17-fx08js">3.8 Photo + ghost (orders
+16-17, <code>fx08.js</code>)</a></li>
+<li><a href="#39-wire-frame-room-orders-18-19-fx09js"
+id="toc-39-wire-frame-room-orders-18-19-fx09js">3.9 Wire-frame room
+(orders 18-19, <code>fx09.js</code>)</a></li>
+<li><a href="#310-eye-zoom-orders-20-21-fx10js"
+id="toc-310-eye-zoom-orders-20-21-fx10js">3.10 Eye zoom (orders 20-21,
+<code>fx10.js</code>)</a></li>
+<li><a href="#311-starburst-orders-22-23-fx11js"
+id="toc-311-starburst-orders-22-23-fx11js">3.11 Starburst (orders 22-23,
+<code>fx11.js</code>)</a></li>
+<li><a href="#312-blur-dots-orders-24-25-fx12js"
+id="toc-312-blur-dots-orders-24-25-fx12js">3.12 Blur dots (orders 24-25,
+<code>fx12.js</code>)</a></li>
+</ul></li>
+<li><a href="#4-art-images-tables-fonts-sprites-3d"
+id="toc-4-art-images-tables-fonts-sprites-3d">4. Art: images, tables,
+fonts, sprites, 3D</a>
+<ul>
+<li><a
+href="#41-pictures-rix3-scx-rix3-u16-w-u16-h-flag-0xaf-768-byte-palette-at-10-wh-pixels-at-778"
+id="toc-41-pictures-rix3-scx-rix3-u16-w-u16-h-flag-0xaf-768-byte-palette-at-10-wh-pixels-at-778">4.1
+Pictures (RIX3 <code>.scx</code>: <code>"RIX3"</code>, u16 w, u16 h,
+flag 0xaf, 768-byte palette at +10, w*h pixels at +778)</a></li>
+<li><a
+href="#42-headerless-8-bit-images-raw-no-palette-the-palette-comes-from-the-scene"
+id="toc-42-headerless-8-bit-images-raw-no-palette-the-palette-comes-from-the-scene">4.2
+Headerless 8-bit images (<code>.raw</code>, no palette: the palette
+comes from the scene)</a></li>
+<li><a href="#43-tables-and-animation"
+id="toc-43-tables-and-animation">4.3 Tables and animation</a></li>
+<li><a href="#44-3d-models" id="toc-44-3d-models">4.4 3D models</a></li>
+</ul></li>
+<li><a href="#5-what-is-bit-exact-what-is-approximate"
+id="toc-5-what-is-bit-exact-what-is-approximate">5. What is bit-exact,
+what is approximate</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1
+id="the-secret-life-of-mr-black-orange-1997---effects-art-and-timing">The
+Secret Life of Mr. Black (Orange, 1997) - effects, art and timing</h1>
+<p><em>The Secret Life of Mr. Black</em> by <strong>Orange</strong>:
+code Hoplite, music Dune (<code>KUSI.IT</code>), graphics Der Piipo,
+animation Frank (credits as listed in <code>README.md</code>).
+<code>DEMO.EXE</code> is an MZ stub + PMODE/W 1.20 + an uncompressed LE
+image (Watcom C glue + hand-written asm effects); music is an Impulse
+Tracker module played by Indoor Music System 0.6; all art lives in one
+container, <code>PETTERI</code>. Duration 183.3 s, 13 scenes. Everything
+below was read from the disassembly (<code>re/obj1.dis</code>) and
+checked against the JavaScript port in <code>web/fx/</code>; "bit-exact"
+always means "0 differing pixels / DAC bytes against the Unicorn oracle
+over the frames the oracle recorded" (see section 5 for what that does
+and does not cover).</p>
+<h2 id="0-at-a-glance">0. At a glance</h2>
+<ul>
+<li><strong>VGA mode 13h, 320x200, 256 colours</strong>, except the
+intro (unchained 320x400). Pixels are not square: the player shows both
+at 4:3.</li>
+<li><strong>No x87 anywhere in the effect code</strong> (the only FPU
+instructions in the image are the <code>fldcw</code> of the C runtime).
+All maths is 32-bit integer fixed point with a <strong>4096-entry sine
+table shipped precomputed in the data object</strong>
+(<code>0x206b68</code>, 10-bit amplitude, values -1023..1023, peak at
+index 1025; <code>cos(i) = T[i + 0x401]</code>, which is why every port
+does <code>T[i + 0x401]</code>; the table has 1026 extra entries after
+the 4096 so the +0x401 never wraps).</li>
+<li><strong>The sequencer is keyed on the IT order</strong> (thresholds
+2, 4, 6, 8, 10, 12, 15, 16, 18, 20, 22, 24, 25), so the timeline is the
+song position. Inside a scene the effect functions read a <strong>time
+word</strong> (<code>dword [0x200ab9]</code>, 65536 units per second of
+the IMS timer) and, for some, row and order.</li>
+<li><strong>Palette is part of the effect</strong> in most scenes: the
+DAC is rewritten every frame (scaled by a fade table, or driven by
+sines) during the vertical retrace.</li>
+<li>Feedback buffers (blur + splat) are the dominant idea: scenes 2-6,
+11, 12.</li>
+</ul>
+<h2 id="1-timeline">1. Timeline</h2>
+<table>
+<thead>
+<tr>
+<th>scene (port)</th>
+<th>orders</th>
+<th>start (s, oracle clock)</th>
+<th>frame fn</th>
+<th>what you see</th>
+<th>seek class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fx00 intro</td>
+<td>0-1</td>
+<td>0</td>
+<td>0x10275f</td>
+<td>noisy blue/white picture fading in, 320x400</td>
+<td>replay from 0</td>
+</tr>
+<tr>
+<td>fx01 eye warp + cards</td>
+<td>2-3</td>
+<td>14.45</td>
+<td>0x103d67</td>
+<td>warped eye picture, flashing photo cards, credits</td>
+<td>pure f(w,order,row)</td>
+</tr>
+<tr>
+<td>fx02 green rings</td>
+<td>4-5</td>
+<td>28.76</td>
+<td>0x102ce6</td>
+<td>blob rings with feedback</td>
+<td>replay from scene start</td>
+</tr>
+<tr>
+<td>fx03 particle cloud</td>
+<td>6-7</td>
+<td>43.12</td>
+<td>0x100b9c</td>
+<td>white particle cloud + barcode strip</td>
+<td>replay</td>
+</tr>
+<tr>
+<td>fx04 particle ring</td>
+<td>8-9</td>
+<td>57.38</td>
+<td>0x1010e8</td>
+<td>red/orange ring around a dark hole</td>
+<td>replay</td>
+</tr>
+<tr>
+<td>fx05 spiral + pi</td>
+<td>10-11</td>
+<td>71.71</td>
+<td>0x10314d</td>
+<td>blob spiral, scrolling digits of pi</td>
+<td>replay</td>
+</tr>
+<tr>
+<td>fx06 light trails</td>
+<td>12-14</td>
+<td>86.05</td>
+<td>0x101834</td>
+<td>swirling trail "flowers"</td>
+<td>checkpoints every 25 calls</td>
+</tr>
+<tr>
+<td>fx07 picture</td>
+<td>15</td>
+<td>107.48</td>
+<td>none</td>
+<td>still picture <code>cncd.scx</code></td>
+<td>static</td>
+</tr>
+<tr>
+<td>fx08 photo + ghost</td>
+<td>16-17</td>
+<td>114.61</td>
+<td>0x103807</td>
+<td>panned photo, ghost silhouette fading in</td>
+<td>pure f(t)</td>
+</tr>
+<tr>
+<td>fx09 wire-frame room</td>
+<td>18-19</td>
+<td>128.97</td>
+<td>0x1054bf</td>
+<td>rotating wire-frame room over a picture</td>
+<td>pure f(t)</td>
+</tr>
+<tr>
+<td>fx10 eye zoom</td>
+<td>20-21</td>
+<td>143.29</td>
+<td>0x105960</td>
+<td>zoomed/warped eye, fade</td>
+<td>pure f(t)</td>
+</tr>
+<tr>
+<td>fx11 starburst</td>
+<td>22-23</td>
+<td>157.60</td>
+<td>0x101d10</td>
+<td>white starburst with colour trails</td>
+<td>checkpoints</td>
+</tr>
+<tr>
+<td>fx12 blur dots</td>
+<td>24-25</td>
+<td>171.92</td>
+<td>0x106263</td>
+<td>645 dots blur-fading, final fade</td>
+<td>replay</td>
+</tr>
+</tbody>
+</table>
+<p>(Start times are the order-change clocks of the Unicorn run,
+<code>web/timetable.js</code>; the original ends with
+<code>int 21h/4Ch</code> at 183.3 s.)</p>
+<h2 id="2-shared-building-blocks">2. Shared building blocks</h2>
+<p><strong>Time and angles.</strong> Every effect turns the time word
+<code>w</code> into angle indices with
+<code>(w * k) &gt;&gt; 10 &amp; 0xfff</code>
+(<code>imul eax,eax,k; sar eax,0xa; and eax,0xfff</code>); the
+multipliers <code>k</code> are the per-effect "speeds" (e.g. scene 3: 6,
+5, 7 for the offsets, 14, 11, -29 for the global rotation). Scene 6 and
+11 count <code>w</code> <em>down</em>.</p>
+<p><strong>Rotation by table.</strong> One rotation of a point
+<code>(a, b)</code> by index <code>i</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> s <span class="op">=</span> T[i]<span class="op">,</span> c <span class="op">=</span> T[i <span class="op">+</span> <span class="bn">0x401</span>]<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>a2 <span class="op">=</span> (a <span class="op">*</span> c <span class="op">-</span> b <span class="op">*</span> s) <span class="op">&gt;&gt;</span> <span class="dv">10</span><span class="op">;</span>  b2 <span class="op">=</span> (b <span class="op">*</span> c <span class="op">+</span> a <span class="op">*</span> s) <span class="op">&gt;&gt;</span> <span class="dv">10</span><span class="op">;</span>      <span class="co">// 32-bit wrap like the CPU (Math.imul)</span></span></code></pre></div>
+<p><strong>The splat.</strong> A particle is a 12-pixel star added into
+a byte buffer (<code>0x100856</code>, <code>0x1015de</code>): each of 12
+offsets gets <code>+4</code> or <code>+8</code> (<code>+2/+4</code> in
+the second variant) only while the byte is below a limit
+(<code>0x37</code>, resp. <code>0x3b</code>), so the buffer never
+overflows into the neighbour byte when read as dwords later.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> SPL <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x140</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x141</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span> <span class="bn">0x142</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span> <span class="bn">0x143</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x280</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x281</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span> <span class="bn">0x282</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span> <span class="bn">0x283</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x3c1</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span> <span class="bn">0x3c2</span><span class="op">,</span><span class="dv">4</span>]<span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (b[o] <span class="op">&lt;</span> lim) b[o] <span class="op">+=</span> inc<span class="op">;</span>      <span class="co">// per pixel, from web/fx/cloud.js</span></span></code></pre></div>
+<p><strong>The blur.</strong> The feedback blur is done on four pixels
+at a time: <code>((l + r + u + d) &gt;&gt; 2 &amp; 0x3f3f3f3f)</code>,
+then subtract a shifted copy (decay) and mask again. It is only correct
+because every byte stays &lt;= 0x3f (so the dword adds never carry
+between pixels); the splat limit guarantees it. See the asm
+write-up.</p>
+<p><strong>Shown frame = table lookup.</strong> Scenes 4, 6, 11 show
+<code>tab[(buffer &lt;&lt; 8) | picture]</code> where <code>tab</code>
+is a 16 KB <code>.shd</code> table: the buffer value (0..0x3f) selects a
+row, the background picture pixel the column. So the glow is "lighting"
+of a photo through a precomputed palette-index table, and no RGB
+arithmetic exists in the demo.</p>
+<h2 id="3-scene-by-scene">3. Scene by scene</h2>
+<h3 id="30-intro-orders-0-1---noise-reveal-of-pallo64ani">3.0 Intro
+(orders 0-1) - noise reveal of <code>pallo64.ani</code></h3>
+<p>The frame function builds 4000 noise bytes with a 3-instruction LFSR
+(<code>ebp = rol(ebp + 0x9d, 11) ^ 0x9d</code>, byte =
+<code>(ebp &amp; 255) * fade &gt;&gt; 8</code>), saturating-adds them to
+an <strong>80x50 window of <code>pallo64.ani</code></strong> (64 frames
+of 4000 bytes; the window moves by 4000 every 6144 time units, wrapping
+at 0x3e800 = 256000, but this branch never fires in the oracle, see
+section 5), &gt;&gt;2, and enlarges 2x2 into a 160-wide buffer with
+averaged in-between pixels. The palette is
+<code>base * (256 - fade) &gt;&gt; 8</code>, <code>fade</code> from a
+256-entry table indexed by order*64+row (it is 0 from about 2 s to 8 s,
+which is why the picture is static there: the noise is zero, the player
+is not stuck). The 160x98 buffer is then expanded into <strong>four VGA
+planes</strong> (unchained 320x400, map mask via port 3c4h) with a
+brightness ramp <code>x</code>, <code>x - x/4</code>,
+<code>x - x/4 + x/8</code>, <code>x - x/4 + x/8</code> on the four
+lines, and the page flip is a CRTC start-address write.
+<em>Bit-exact</em>: 503 frames, 0 pixel and 0 palette differences,
+<strong>given the recorded per-frame inputs</strong>
+(<code>web/assets/intro_frames.json</code>, taken from the oracle).</p>
+<h3 id="31-eye-warp--title-cards-orders-2-3-fx01js">3.1 Eye warp + title
+cards (orders 2-3, <code>fx01.js</code>)</h3>
+<p>A plane is rotated by three chained rotations (angles from
+<code>w</code>), the three corners <code>P0, P1, P2</code> are rotated,
+and a <strong>41x26 grid of (u, v, shade) records</strong> is walked by
+adding per-column and per-row 3D steps. The depth of every grid point is
+displaced by a sum of five sines (wave), clamped to |z| &gt;= 0x1000,
+the perspective is <code>0x800000 / z</code>, and u, v come out as
+<code>x * k &gt;&gt; 8</code> plus a time offset. Each of the
+<strong>40x25 cells (8x8 pixels)</strong> is then filled with
+second-order interpolation of u and v (the row step of the x step is
+itself stepped, <code>ddu</code>) and linear shade, and every pixel is
+<code>shade_table[shade][texture[v][u]]</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>ua <span class="op">=</span> <span class="fu">im</span>(x<span class="op">,</span> k) <span class="op">&gt;&gt;</span> <span class="dv">8</span><span class="op">;</span> va <span class="op">=</span> <span class="fu">im</span>(y<span class="op">,</span> k) <span class="op">&gt;&gt;</span> <span class="dv">8</span><span class="op">;</span>           <span class="co">// k = 0x800000 / ec  (cdq; idiv)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dux <span class="op">+=</span> ddu<span class="op">;</span> U <span class="op">+=</span> dul<span class="op">;</span> Sh <span class="op">+=</span> dsy<span class="op">;</span>                  <span class="co">// per scanline of a cell</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>scr[o <span class="op">+</span> x] <span class="op">=</span> shade[(s <span class="op">&gt;&gt;</span> <span class="dv">8</span> <span class="op">&amp;</span> <span class="dv">255</span>) <span class="op">&lt;&lt;</span> <span class="dv">8</span> <span class="op">|</span> tex[(v <span class="op">&gt;&gt;</span> <span class="dv">8</span> <span class="op">&amp;</span> <span class="dv">255</span>) <span class="op">&lt;&lt;</span> <span class="dv">8</span> <span class="op">|</span> (u <span class="op">&gt;&gt;</span> <span class="dv">8</span> <span class="op">&amp;</span> <span class="dv">255</span>)]]<span class="op">;</span></span></code></pre></div>
+<p>On top, six <strong>overlay cells</strong> (64000 bytes each)
+selected by a 128-entry timeline (<code>order*64+row</code>) are applied
+as <code>scr = shade[(overlay &gt;&gt; 2) &lt;&lt; 8 | scr]</code>: one
+is a flat 127 (darken to black), the other five are the photo cards
+<code>wife, son, daugh, andi, all</code> (section 4). The DAC is the
+source palette times <code>fade</code>
+(<code>min(w &gt;&gt; 8, 0x100)</code>, then
+<code>(0x40 - row) * 8</code> from order 3 row 0x20, 0 in order 4).
+<em>Bit-exact</em>: 334 frames, 0 diffs, given the original's own
+<code>(w, order, row)</code> per call. It is a pure function of those
+three, so seek is free; in the player <code>w</code> and the row come
+from the music clock. <strong>Texture and palette are those of
+<code>zrva.scx</code></strong> (verified, section 4): the eye of scenes
+1 and 10 is the same 256x256 picture.</p>
+<h3 id="32-green-rings-orders-4-5-fx02js--blobjs">3.2 Green rings
+(orders 4-5, <code>fx02.js</code> + <code>blob.js</code>)</h3>
+<p>Per call: update 12 parameters from the <em>previous</em> call's time
+word (<code>0x10300a</code>), then <strong>256 additive, saturating
+blits of a 32x32 blob</strong> into buffer A. Blob <code>n</code> sits
+at
+<code>(sin(i)*0x64/1024 * r &gt;&gt; 11 + 0x90, cos(i)*0x50/1024 * r &gt;&gt; 11 + 0x54)</code>,
+<code>i</code> advances 0x30 per blob and <code>r</code> is a sum of two
+sines (so the 256 blobs trace a wobbling ellipse of 100x80 half-axes:
+the "rings"). The blob itself is generated at init
+(<code>0x102c16</code>):
+<code>63 - (min(x^2 + y^2, 127) &gt;&gt; 1)</code> for x, y in -16..15,
+a radial cone. The shown frame is <code>A/2 + tahta.raw</code>
+(saturating), then A is <strong>downscaled by taking every second
+pixel/row, halved, and tiled 2x2</strong> into B, and A/B swap: the
+picture feeds back on itself at half size, which produces the receding
+rings. DAC = <code>pal * fade[row] &gt;&gt; 8</code>.
+<em>Bit-exact</em>: 201 frames incl. DAC, <strong>given the original's
+time word per call</strong>; the player replays from the scene start
+with the oracle's mean call spacing (4682.3 units), so frame
+<em>times</em> are approximate.</p>
+<h3 id="33-particle-cloud-orders-6-7-fx03js-cloudjs">3.3 Particle cloud
+(orders 6-7, <code>fx03.js</code>, <code>cloud.js</code>)</h3>
+<p>Up to 2048 points from a table of uniform coordinates
+(-0x7fff..0x8000, filled at init <code>0x100ab2</code> by the same
+add/rol/xor LFSR with rol 10) are rotated by <strong>six chained
+rotations</strong>: three whose angle depends on the distance to the
+rotation axis (a twist: <code>d = (x+o)^2 + y^2 &gt;&gt; 19</code>,
+clamped to 0x1000,
+<code>e = ((0x1000 - d)^2 &gt;&gt; 11)^2 &gt;&gt; 11</code>, angle =
+<code>e * sine &gt;&gt; 15</code>), then three global ones from
+<code>w</code>. Perspective with <code>cdq; shl eax,15; idiv ecx</code>
+(the shift drops the high bits for |v| &gt;= 65536; the port emulates
+this), x scaled by 5/4, splat at
+<code>(+0x9f80 &gt;&gt; 8, +0x6380 &gt;&gt; 8)</code>, number of points
+<code>min(0x800, w*32 &gt;&gt; 10 + 1)</code> (the cloud grows). Then
+blur (decay <code>&gt;&gt; 2</code>) and swap. Output = buffer +
+<code>koodi.raw</code> as a <strong>dword add with carries</strong>
+(deliberate or tolerated, bytes cross-talk), with a palette driven by
+three sines (<code>(T[i] + 0x4400) * e &gt;&gt; 13</code>, clamped
+0x3f). <em>Bit-exact</em> 521 frames given (w, order, row); player:
+calls DT = 1793.2 units apart.</p>
+<h3 id="34-particle-ring-orders-8-9-fx04js">3.4 Particle ring (orders
+8-9, <code>fx04.js</code>)</h3>
+<p>Same cloud, but the points are first shifted by <code>w * 0x80</code>
+(with 16-bit wrap), the depth gets
+<code>+ (x^2 + y^2) &gt;&gt; 14</code> plus an offset that drifts in
+order 9 from row 0x30, giving the ring and the dark hole. Output
+<code>tab[(buffer &lt;&lt; 8) | picture]</code> with
+<code>kuva.shd</code> / <code>kuva.scx</code> (red/orange palette from
+the picture). <em>Bit-exact</em>, 502 frames (a first attempt differed
+on 105 pixels because the 16-bit wrap was skipped when
+<code>w*0x80</code> was exactly 0; fixed).</p>
+<h3 id="35-blob-spiral--pi-scroller-orders-10-11-fx05js">3.5 Blob spiral
++ pi scroller (orders 10-11, <code>fx05.js</code>)</h3>
+<p>Same blob blitter as 3.2, but the radius shrinks by 4 per blob
+(spiral), the shown frame is A/2 and, for rows 90..159, a
+<strong>scroller</strong> is added. The scroller (<code>0x103542</code>)
+copies glyph columns from the font strip <code>f1.raw</code> (800 bytes
+per row, 64 rows used) into a 384x64 strip buffer; glyph widths and the
+text (digits of pi) are tables in the data object; the position
+accumulates <code>w &gt;&gt; 14</code> per call. The feedback is
+downscaled bottom-up with <code>/2 - /2/32</code> (slight decay).
+<em>Bit-exact</em> 201 frames given (w, row); the first blob of every
+call uses raw unmasked table indices that can point below the sine
+table, so the data object dumped at the first call is used: verified
+only over this run.</p>
+<h3 id="36-light-trail-flowers-orders-12-14-fx06js--trailjs">3.6
+Light-trail flowers (orders 12-14, <code>fx06.js</code> +
+<code>trail.js</code>)</h3>
+<p>64 passes x 64 points per frame, each point's three angles from an
+LCG restarted at <code>0x5c23</code> every pass (so every pass draws the
+<em>same</em> shape, rotated differently), three rotations by those
+angles then three by pass angles built from the previous frame's state
+(sines of <code>w*{1,-3,2} &gt;&gt; 10</code> and accumulators of
+<code>w - previous w</code>), perspective with <code>shl 16</code>,
+splat <code>0x1015de</code> (limit 0x3b), blur with decay
+<code>&gt;&gt; 3</code>, output through
+<code>kuva2.shd</code>/<code>kuva2.scx</code>. Because the state
+accumulates, the port keeps checkpoints every 25 calls.
+<em>Bit-exact</em> 750 frames.</p>
+<h3 id="37-picture-order-15-fx07js">3.7 Picture (order 15,
+<code>fx07.js</code>)</h3>
+<p>No frame function at all: init <code>0x10095e</code> sets mode 13h,
+loads <code>cncd.scx</code>, writes its 6-bit palette to the DAC and
+copies 64000 bytes to VRAM. Matches golden <code>t0110</code>
+exactly.</p>
+<h3 id="38-photo--ghost-orders-16-17-fx08js">3.8 Photo + ghost (orders
+16-17, <code>fx08.js</code>)</h3>
+<p>A <strong>640x400 photo</strong> (<code>k1.scx</code>) is shown
+through a 320x200 window panned by sines
+(<code>x = ((S[a]+S[b]+S[c]+S[d])&gt;&gt;2 + 0x400) * 0xab &gt;&gt; 11</code>,
+<code>y = (...) * 0x91 &gt;&gt; 11 + 0x32</code>). A 320x256
+<strong>ghost</strong> picture (<code>k2.scx</code> pixels) is blended
+over it at <code>y0 + 10 + (cos(t &gt;&gt; 8) &gt;&gt; 4)</code> through
+a <strong>5-bit mask</strong> (<code>alffa.raw &gt;&gt; 3</code>, a
+silhouette of two men): per pixel
+<code>T2[T1[(32-m)*256 + bg] * 256 + T1[m*256 + g]]</code>, i.e. a
+cross-fade done with two 16 KB tables and a 64 KB one, no
+multiplications. <em>Bit-exact</em>, 556 frames, pure function of
+<code>t</code>.</p>
+<h3 id="39-wire-frame-room-orders-18-19-fx09js">3.9 Wire-frame room
+(orders 18-19, <code>fx09.js</code>)</h3>
+<p>96 vertices and 96 edges (static tables in the data object,
+<code>0x214b22</code>, <code>0x215422</code>) are rotated by three
+angles (<code>3t, 2t, 7t &gt;&gt; 10</code>), x and y doubled, z offset
+<code>t &gt;&gt; 10</code>, edges sorted by z, clipped against z = 1 and
+drawn by a Chebyshev line routine (n = max(|dx|, |dy|) &gt;&gt; 8 steps)
+that <strong>splats the same 12-pixel star as the particle
+scenes</strong> into a line buffer (cleared each frame); output
+<code>T[(line &lt;&lt; 8) | picture]</code> with the <code>kuva3</code>
+table/picture. <em>Bit-exact</em> 501 frames given <code>t</code>; pure
+function of <code>t</code>.</p>
+<h3 id="310-eye-zoom-orders-20-21-fx10js">3.10 Eye zoom (orders 20-21,
+<code>fx10.js</code>)</h3>
+<p>A <strong>81x51 grid</strong> of warped texture coordinates over the
+256x256 <code>zrva.scx</code>: two radial bulges at (0x5000, 0x3200) and
+(0xf000, 0x9600) (strength <code>(1 - r^2/256)^8</code> by three
+squarings in 8.8 fixed point), rotation by an angle from four sine
+phases, scale <code>amp = min(0x10000, 64t &gt;&gt; 10)</code>. Each
+<strong>4x4 cell</strong> is filled by bilinear-ish stepping between its
+four grid corners and the pixel is a straight
+<code>tex[y&gt;&gt;8 &amp; 255][x&gt;&gt;8 &amp; 255]</code> read. The
+fade from order 21 row 32 telescopes:
+<code>level = max(0, 0x40000 - (w - 701391))</code>, DAC =
+<code>pal * (level &gt;&gt; 10) &gt;&gt; 8</code>. <em>Bit-exact</em>
+501 frames incl. DAC, pure function of <code>t</code> (the constant
+701391 comes from the oracle).</p>
+<h3 id="311-starburst-orders-22-23-fx11js">3.11 Starburst (orders 22-23,
+<code>fx11.js</code>)</h3>
+<p>Same engine as 3.6 with 64 passes x 128 points, LCG seed 1, radius
+<code>(0x1000 + sum k^2) &gt;&gt; 5</code>, perspective
+<code>shl 8</code>, blur decay <code>&gt;&gt; 2</code>,
+<code>kuva3</code> table. The last ~0.1 s runs into order 24: the DAC
+becomes <code>pal * f &gt;&gt; 8</code> with
+<code>f = table[row] + ((sine[(w&gt;&gt;7) &amp; 0xfff] - 0x400) &gt;&gt; 5)</code>,
+clamped at 0. <em>Bit-exact</em> 334 frames incl. that fade (verified
+with a second oracle run to 172 s).</p>
+<h3 id="312-blur-dots-orders-24-25-fx12js">3.12 Blur dots (orders 24-25,
+<code>fx12.js</code>)</h3>
+<p>Each call blurs buffer A into B with raw <strong>unaligned dword adds
+that carry across bytes</strong>
+(<code>[-4] + [+4] + [-0x500] + [+0x500]</code>, i.e. neighbours at +-1
+pixel and +-4 rows), <code>&gt;&gt; 2</code>, minus a shifted copy; then
+645 dots
+<code>(x, -y) * (0x2000 - min(0x2000, w &gt;&gt; 7)) &gt;&gt; 12 + (160, 100)</code>
+each add one of 16 cycling 16x16 sprites (dword adds, with carry); the
+dots converge to the centre as <code>w</code> grows. In order 25 the
+palette follows <code>fade[row]</code>. <em>Bit-exact</em> 795 frames
+incl. DAC given (w, row, order); the fade row in order 25 is derived
+from time in the player (+-1 call).</p>
+<h2 id="4-art-images-tables-fonts-sprites-3d">4. Art: images, tables,
+fonts, sprites, 3D</h2>
+<p>Everything lives in <strong><code>PETTERI</code></strong> (1.7 MB, no
+compression): <code>u32 count (23)</code>, then 23 x
+<code>{char name[12]; u32 offset}</code> (offsets relative to the end of
+the directory at 0x174), files back to back. <code>DEMO.EXE</code> opens
+it once and finds files by comparing the 12-byte name
+(<code>0x100231</code>). <code>re/petteri.py</code> unpacks it to
+<code>re/assets/</code> and renders previews. The EXE also holds the
+name <code>anim176.ani</code> (<code>0x20f2c6</code>) but <strong>no
+such file exists in PETTERI</strong>. Previews are in <a
+href="https://github.com/kassoulet/The_Secret_Life_of_Mr._Black_by_Orange/tree/main/figures"><code>figures/</code></a>;
+palettes are 6-bit VGA DAC values (the port scales
+<code>v*255/63</code>), grey previews of the palette-less
+<code>.raw</code> files are stretched to full range and are <em>not</em>
+in their real colours.</p>
+<h3
+id="41-pictures-rix3-scx-rix3-u16-w-u16-h-flag-0xaf-768-byte-palette-at-10-wh-pixels-at-778">4.1
+Pictures (RIX3 <code>.scx</code>: <code>"RIX3"</code>, u16 w, u16 h,
+flag 0xaf, 768-byte palette at +10, w*h pixels at +778)</h3>
+<table>
+<thead>
+<tr>
+<th>file</th>
+<th>size</th>
+<th>colours actually used</th>
+<th>used by</th>
+<th>preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cncd.scx</code></td>
+<td>320x200</td>
+<td>251</td>
+<td>scene 7 (picture, order 15)</td>
+<td><img src="figures/cncd.png" /></td>
+</tr>
+<tr>
+<td><code>k1.scx</code></td>
+<td>640x400</td>
+<td>119</td>
+<td>scene 8, the panned photo</td>
+<td><img src="figures/k1.png" /></td>
+</tr>
+<tr>
+<td><code>k2.scx</code></td>
+<td>320x256</td>
+<td>250</td>
+<td>scene 8, the ghost (same palette as k1)</td>
+<td><img src="figures/k2.png" /></td>
+</tr>
+<tr>
+<td><code>kuva.scx</code></td>
+<td>320x200</td>
+<td>237</td>
+<td>scene 4 background</td>
+<td><img src="figures/kuva.png" /></td>
+</tr>
+<tr>
+<td><code>kuva2.scx</code></td>
+<td>320x200</td>
+<td>218</td>
+<td>scene 6 background</td>
+<td><img src="figures/kuva2.png" /></td>
+</tr>
+<tr>
+<td><code>kuva3.scx</code></td>
+<td>320x200</td>
+<td>230</td>
+<td>scenes 9 and 11 background (verified: scene 9's picture, table and
+palette are exactly kuva3)</td>
+<td><img src="figures/kuva3.png" /></td>
+</tr>
+<tr>
+<td><code>zrva.scx</code></td>
+<td>256x256</td>
+<td>232</td>
+<td>scenes 1 and 10 (texture and palette identical in both ports'
+data)</td>
+<td><img src="figures/zrva.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>Note: <code>re/NOTES.md</code> attributes scene 1's eye to
+<code>k1.scx</code>; the data exported for scene 1 shows the texture is
+<code>zrva.scx</code> (compared byte for byte), and <code>k1.scx</code>
+is the scene 8 photo.</p>
+<h3
+id="42-headerless-8-bit-images-raw-no-palette-the-palette-comes-from-the-scene">4.2
+Headerless 8-bit images (<code>.raw</code>, no palette: the palette
+comes from the scene)</h3>
+<table>
+<thead>
+<tr>
+<th>file</th>
+<th>size</th>
+<th>distinct values</th>
+<th>role</th>
+<th>preview</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wife.raw</code>, <code>son.raw</code>, <code>daugh.raw</code>,
+<code>andi.raw</code>, <code>all.raw</code></td>
+<td>320x200 each</td>
+<td>14, 14, 16, 15, 15 (up to 255)</td>
+<td>the five photo/title cards of scene 1, byte-identical to the overlay
+cells (value &gt;&gt; 2 indexes the shade table)</td>
+<td><img src="figures/wife_raw.png" /> <img
+src="figures/all_raw.png" /></td>
+</tr>
+<tr>
+<td><code>koodi.raw</code></td>
+<td>320x200</td>
+<td>5 (0..7)</td>
+<td>barcode strip added in scene 3</td>
+<td><img src="figures/koodi_raw.png" /></td>
+</tr>
+<tr>
+<td><code>tahta.raw</code></td>
+<td>320x200</td>
+<td>53 (max 58)</td>
+<td>scene 2's background (verified: the "kk" table in the port is this
+file)</td>
+<td><img src="figures/tahta_raw.png" /></td>
+</tr>
+<tr>
+<td><code>alffa.raw</code></td>
+<td>320x256</td>
+<td>16 (multiples of 17)</td>
+<td>scene 8 ghost mask, loaded with <code>&gt;&gt; 3</code>
+(<code>0x1037bb</code> loop, 0x14000 bytes)</td>
+<td><img src="figures/alffa_raw.png" /></td>
+</tr>
+<tr>
+<td><code>f1.raw</code></td>
+<td>800x128</td>
+<td>24</td>
+<td>scene 5 font: top 64 rows are the digits <code>0123456789.</code>,
+bottom half is faint handwriting not read by the scroller</td>
+<td><img src="figures/f1_raw.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>The photo cards are drawn in 15-16 grey levels and "MY WIFE is a
+man," style captions; the demo never needs colour for them because the
+shade table maps (level, pixel) to a palette index.</p>
+<h3 id="43-tables-and-animation">4.3 Tables and animation</h3>
+<ul>
+<li><code>*.shd</code> (16384 bytes = 64 rows x 256):
+<code>kuva.shd</code>, <code>kuva2.shd</code>, <code>kuva3.shd</code>,
+<code>zrva.shd</code>, <code>kk.shd</code>. Row = brightness 0..63,
+column = source palette index. In scene 1 the first 16 KB of the 64 KB
+shade table equal <code>zrva.shd</code>.</li>
+<li><code>kk.mix</code> (65536): a 256x256 table (246 distinct values),
+<code>kk.shd</code> is a 16 KB table with 246 distinct values; their
+exact consumers were not traced here.</li>
+<li><code>pallo64.ani</code> (256000 = 64 frames of 80x50 bytes, 256
+distinct values): the intro's light/noise source (offset step 4000, wrap
+0x3e800, from the code).</li>
+<li>Generated, not stored: the <strong>blob</strong> (32x32 cone,
+<code>63 - (min(x^2+y^2,127) &gt;&gt; 1)</code>) of scenes 2 and 5, the
+2048 uniform point table (LCG at init <code>0x100ab2</code>), and the
+sine table (stored in the data object).</li>
+</ul>
+<h3 id="44-3d-models">4.4 3D models</h3>
+<p><strong>There are no mesh files.</strong> <code>PETTERI</code>
+contains no 3D data and the EXE has no object loader. The only
+"geometry" is: the <strong>wire-frame room</strong> (96 vertices x 3
+int32 and 96 edges x 2 int32 in the data object, exported to
+<code>web/assets/s18.bin</code>), the <strong>8x8-pixel cells of
+grids</strong> (scene 1: 41x26, scene 10: 81x51) built procedurally, and
+the <strong>procedural point clouds</strong> (scenes 3, 4, 6, 11). The
+6-bit palettes of every scene come from the <code>.scx</code> pictures,
+except the intro (768 bytes at <code>0x20f2ea</code>,
+<code>web/assets/intro_pal.bin</code>) and the sine-driven palette of
+scene 3.</p>
+<h2 id="5-what-is-bit-exact-what-is-approximate">5. What is bit-exact,
+what is approximate</h2>
+<ul>
+<li><strong>Pixels of a frame: exact</strong> for all 13 scenes,
+<em>given the original's own inputs for that frame</em> (time word, row,
+order; oracle = the original code under Unicorn).</li>
+<li><strong>Timing is not</strong>: the original's frame times depend on
+the machine; the oracle's clock is a model (20 ns/instruction + 1
+us/port access). The player derives the time word from the music clock
+with the oracle's <em>mean</em> call spacing, so <em>when</em> a
+feedback frame appears is approximate; scenes 2-6, 11, 12 are replayed
+from the scene start.</li>
+<li>The intro's scroll branch is ported but never fires in the oracle
+(untested). Scene 5's first blob reads live memory. The sync of
+libopenmpt to IMS is approximate.</li>
+<li>Scenes 6 and 11 count <code>w</code> downwards in the original; the
+port reproduces that.</li>
+</ul>
+</body>
+</html>
